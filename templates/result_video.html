@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ผลลัพธ์วิดีโอ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #f9f9f9; }
+    video { width: 100%; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    a { display: block; margin-top: 10px; font-size: 18px; text-decoration: none; color: #4CAF50; }
+  </style>
+</head>
+<body>
+  <h2>🎬 วิดีโอที่ตรวจจับแล้ว:</h2>
+  <video controls>
+    <source src="{{ video_path }}" type="video/mp4">
+    เบราว์เซอร์ของคุณไม่รองรับ video tag.
+  </video>
+  <a href="{{ download_url }}">📥 ดาวน์โหลดวิดีโอนี้</a>
+  <a href="/">⬅️ กลับ</a>
+</body>
+</html>
